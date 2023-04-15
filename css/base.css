@@ -1,0 +1,253 @@
+*{
+}
+html {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+ }
+ body {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 13px;
+   margin: 0;
+   padding: 0;
+ }
+ /* div {
+   border: 2px solid #000;
+   min-height: 50px;
+ }
+ img {
+   width: 100%;
+   height: auto;
+ } */
+ :root {
+   --color-yellow: #fff206;
+ }
+ .clearfix {
+   clear: both;
+ }
+ .container {
+   width: 1120px;
+   margin: 0 auto;
+   overflow: auto;
+   display: flex;
+ }
+ .header {
+   width: 100%;
+   overflow: auto;
+ }
+ .logo {
+   float: left;
+   display: inline-table;
+   width: 30%;
+   height: 65px;
+   background: url("/images/logo.png") no-repeat left center;
+ }
+ .menu {
+   float: right;
+   display: inline-table;
+   width: 60%;
+   text-align: center;
+   /* margin-top: 3%; */
+ }
+ .menu li {
+   display: inline-table;
+   margin: 0 10px 0 10px;
+   margin-top: 1%;
+ }
+ .menu li > a {
+   text-decoration: none;
+   text-transform: uppercase;
+   color: #000;
+ }
+ .banner {
+   background-image: url("/images/banner.png");
+   background-size: cover;
+   background-position: center bottom;
+   height: 60vh;
+ }
+ /* Form-Choose-Home */
+ .title-home {
+   font-size: 1.5rem;
+   font-weight: bold;
+   text-transform: uppercase;
+ }
+ .image-home {
+   height: 150px;
+ }
+ .image-home img {
+   width: 100%;
+ }
+ #form-choose-home {
+   overflow: auto;
+   /* background-color: var(--color-yellow); */
+ }
+ .choose-home {
+   display: inline-table;
+   text-align: center;
+   /* Căn giữa chữ ở trong 1 layout */
+   /* padding-left: 54px; */
+   width: 280px;
+   height: 230px;
+ }
+ /* Title: Về Chúng Tôi */
+ #title-center {
+   font-size: 2.2rem;
+   text-transform: uppercase;
+   padding: 20px 0 20px 0;
+ }
+ /* Form-Cty */
+ .button-choose {
+   text-align: center;
+   width: 380px;
+   height: 280px;
+ }
+ .image-cty {
+   width: 362px;
+   height: 200px;
+ }
+ .image-cty img {
+   width: 100%;
+ }
+ .title-cty {
+   font-size: 1.5rem;
+   font-weight: bold;
+   text-transform: uppercase;
+   color: #f1fafd;
+ }
+ #form-cty {
+   overflow: auto;
+ }
+ /* Bottom-content */
+ #form-title-bottom {
+   background-color: #fff206;
+ }
+ #title-bottom {
+   display: flex;
+ }
+ .title-left,
+ .title-center,
+ .title-right {
+   width: 25%;
+   margin: 20px 85px 0 0;
+   font-weight: 500;
+ }
+ .title-bold-bottom {
+   font-weight: bold;
+   line-height: 20px;
+ }
+ .title-left {
+   font-weight: bold;
+ }
+ .title-center > ul,
+ .title-left > ul {
+   list-style: none;
+   line-height: 20px;
+ }
+ Đạt
+ Đạt Nguyễn
+ css
+ Bạn đã gửi
+ Ok bn
+ Đạt
+ Đạt Nguyễn
+ <!DOCTYPE html>
+ <html>
+   <head>
+     <title>Thắng Lợi Group</title>
+     <link rel="stylesheet" href="css/base.css" />
+   </head>
+   <body>
+     <div class="header">
+       <div class="logo"></div>
+       <ul class="menu">
+         <li><a href="">DỊCH VỤ</a></li>
+         <li><a href="">DỰ ÁN</a></li>
+         <li><a href="">TIN TỨC</a></li>
+         <li><a href="">LIÊN HỆ</a></li>
+         <li><a href="">BẢNG GIÁ</a></li>
+       </ul>
+     </div>
+     <div class="banner"></div>
+     <div id="form-choose-home" class="container">
+       <div class="choose-home">
+         <div class="image-home">
+           <img src="images/van-phong.png" alt="" />
+         </div>
+         <span class="title-home">Văn Phòng</span>
+       </div>
+       <div class="choose-home">
+         <div class="image-home">
+           <img src="images/biet-thu.png" alt="" />
+         </div>
+         <span class="title-home">Biệt thự</span>
+       </div>
+       <div class="choose-home">
+         <div class="image-home">
+           <img src="images/can-ho.png" alt="" />
+         </div>
+         <span class="title-home">Căn hộ</span>
+       </div>
+       <div class="choose-home">
+         <div class="image-home">
+           <img src="images/nha-pho.png" alt="" />
+         </div>
+         <span class="title-home">Nhà Phố</span>
+       </div>
+     </div>
+     <div id="title-center" class="container">Về Công Ty</div>
+     <div id="form-cty" class="container">
+       <div class="button-choose">
+         <div class="image-cty">
+           <img src="images/nha-may.jpg" alt="" />
+         </div>
+         <span class="title-cty">Nhà máy</span>
+       </div>
+       <div class="button-choose">
+         <div class="image-cty">
+           <img src="images/showroom.jpg" alt="" />
+         </div>
+         <span class="title-cty">ShowRoom</span>
+       </div>
+       <div class="button-choose">
+         <div class="image-cty">
+           <img src="images/gioi-thieu.jpg" alt="" />
+         </div>
+         <span class="title-cty">Giới Thiệu</span>
+       </div>
+     </div>
+   </body>
+   <footer id="form-title-bottom" class="header">
+     <div id="title-bottom" class="container">
+       
+       <div class="title-left">
+         <ul>
+           <li>Về chúng tôi</li>
+           <li>Chính sách & Quy định chung</li>
+           <li>Hướng dẫn đổi trả hàng</li>
+           <li>Bảo hành</li>
+           <li>Thanh toán</li>
+           <li>Chính sách bảo mật</li>
+         </ul>
+       </div>
+       
+       <div class="title-center">
+         <ul>
+           <li>Địa chỉ: Lô 103, đường An Dương Vương,Khu Đô thị An Cựu, Huế</li>
+           <li>Điện thoại: (0234) 3826767 - 3827878</li>
+           <li>
+             Văn phòng tại <span class="title-bold-bottom">Đà Nẵng:</span> 18
+             Bạch Đằng
+           </li>
+         </ul>
+       </div>
+ 
+       <div class="title-right">
+         <span
+           >Giấy phép đăng ký kinh doanh số 03442187 cấp ngày 12/03/2010 tại Sở
+           Công thương tỉnh Thừa Thiên Huế.</span
+         >
+       </div>
+ 
+     </div>
+   </footer>
+ </html>
